@@ -21,7 +21,8 @@
 					<th>File Name</th>
 					<th>View XML</th>
 					<th>Download</th>
-					<th>Parse XML</th>
+					<th>Parse Blind XXE</th>
+					<th>Parse Fixed XXE</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -37,11 +38,12 @@
 						<td><a href="uploads/<?php echo $file; ?>" target="_self">View</a></td>
 						<td><a href="uploads/<?php echo $file; ?>" download>Download</a></td>
 						<td><a href="parse.php?file=<?php echo $file; ?>" target="_self">Parse</a></td>
+						<td><a href="parse_fixed.php?file=<?php echo $file; ?>" target="_self">Parse Fixed</a></td>
 					</tr>	
 					<?php } ?>
 			</tbody>
 		</table>
 	</div>
-	<div><a class = "btn btn-info" href="http://localhost/challenge10/page/about.php">About me?</a></div>
+	<div><a class = "btn btn-info" href="http://localhost/challenge10/page/about.php">My info</a></div>
 </body>
 </html>

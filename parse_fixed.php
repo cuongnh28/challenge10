@@ -4,7 +4,7 @@ if(isset($_GET['file'])){
 	$file = "uploads/" .$_GET['file'];
 	$xmlfile = file_get_contents($file);
 	$dom = new DOMDocument();
-	$dom->loadXML($xmlfile, LIBXML_NOENT | LIBXML_DTDLOAD);
+	$dom->loadXML($xmlfile);
 	$xmlList = simplexml_import_dom($dom);
 }
 ?> 
